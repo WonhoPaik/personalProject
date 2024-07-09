@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+body {
+	width: 1200px;
+	height: 100%;
+	border: 1px solid black;
+	margin: 0 auto;
+	/* padding: 10px; */
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 900;
+}
+
+header, nav, section, footer {
+	/* border: 1px dotted red; */
+	/* padding: 5px; */
+	
+}
+
+ul {
+	/* border: 1px dotted blue; */
+	list-style-type: none;
+}
+
+li {
+	/* border: 1px dotted green; */
+	
+}
+
+header {
+	/* background-color: yellow; */
+	height: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	position: relative;
+}
+
+header>img {
+	/* width: 150px; */
+	height: 100px;
+	border-radius: 100%;
+	/* width: auto; */
+	/* border: 1px dotted red; */
+	position: relative;
+	left: 5%;
+	top: 25px;
+	/* top: 25%; */
+	/* margin: 15px 50px; */
+}
+
+header>ul {
+	display: flex;
+	/* border: 1px dotted green; */
+	/* display: flex; */
+	/* align-items: start; */
+	position: relative;
+}
+
+header>ul>li {
+	/* padding: 10px; */
+	/* float: right; */
+	/* border: 1px dotted blue; */
+	
+}
+
+header>ul>li>a {
+	color: green;
+	/* border: 1px dotted red; */
+}
+
+nav {
+	width: 100%;
+	height: 100px;
+	height: auto;
+	/* border: 1px dotted red; */
+	/* background-color: yellowgreen; */
+	/* display: flex; */
+	/* justify-content: right; */
+	/* align-items: flex-start; */
+	position: relative;
+	/* min-height: 100%; */
+}
+
+nav>ul {
+	/* height: 100px; */
+	height: 100px;
+	height: auto;
+	/* background-color: orange; */
+	/* position: absolute; */
+	position: relative;
+	/* bottom: 1px; */
+	/* padding-bottom: 0; */
+	top: 16px;
+}
+
+nav>ul>li {
+	/* height: 100px; */
+	/* height: auto; */
+	/* background-color: aqua; */
+	border-bottom: 2px solid white;
+	display: inline-block;
+	/* align-items: flex-end; */
+	/* position: absolute; */
+	/* bottom: 0px; */
+	/* top: 10px; */
+	/* top: 0vh; */
+	/* padding: 15px; */
+}
+
+.content {
+	background-color: white;
+	position: absolute;
+	display: none;
+	/* padding: 15px; */
+	margin-top: 2px;
+}
+
+li>a {
+	/* background-color: yellow; */
+	display: block;
+	padding: 10px 15px;
+}
+
+.content>a {
+	/* background-color: aquamarine; */
+	display: block;
+	padding: 15px;
+}
+
+li.member {
+	float: right;
+	font-size: 13px;
+	/* background-color: yellow; */
+	margin-right: 10px;
+	padding: 0px;
+}
+
+li.member>a {
+	border: 2px solid green;
+	border-radius: 50px;
+	color: green;
+}
+
+li.member>a:hover {
+	color: red;
+	border: 2px solid red;
+}
+
+header>ul>li>a:hover {
+	color: red;
+}
+
+li.menu {
+	/* background-color: red; */
+	
+}
+
+nav>ul>li.menu:hover {
+	border-bottom: 2px solid green;
+}
+
+li:hover>a {
+	color: green;
+}
+
+li:hover .content {
+	display: block;
+}
+
+.content>a:hover {
+	color: green;
+}
+
+section {
+	height: 750px;
+	border-bottom: 2px solid rgb(194, 194, 194);
+	border-top: 2px solid rgb(194, 194, 194);
+}
+/* 회원가입 css */
+.register>h1 {
+	padding-top: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.register div {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.register p {
+	width: 80%;
+}
+
+.register form {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.register table {
+	width: 100%;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	border-collapse: collapse;
+}
+
+.register tr, .register th, .register td {
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	height: 40px;
+}
+
+.register th, .register td {
+	padding-left: 10px;
+}
+
+.register th {
+	width: 100px;
+	background-color: rgb(244, 243, 255);
+	padding-left: 0px;
+}
+
+.register th>span {
+	font-size: 1em;
+	color: red;
+}
+
+.register td {
+	width: 90%;
+	padding: 5px 0px 5px 10px;
+}
+
+.register input {
+	margin-left: 10px;
+}
+
+.register select.box {
+	width: 100px;
+	height: 30px;
+	box-sizing: border-box;
+	margin-left: 10px;
+	border-radius: 4px;
+	color: #383838;
+	background-color: #ffffff;
+}
+
+.register option {
+	font-size: 14px;
+}
+
+.register .info #domain-list option {
+	font-size: 14px;
+	background-color: #ffffff;
+}
+/* 회원가입 css 끝 */
+footer {
+	/* height: 100px; */
+	/* padding: 10px 100px 10px 100px; */
+	font-size: 14px;
+}
+
+.footer:nth-child(1) {
+	/* border: 1px dotted blue; */
+	/* height: 50%; */
+	padding: 10px 100px 10px 100px;
+	/* display: flex; */
+	/* justify-content: space-around; */
+	/* align-items: center; */
+	/* margin: 0 auto; */
+	border-bottom: 2px solid rgb(194, 194, 194);
+}
+
+.footer.content1>a {
+	/* color: blue; */
+	/* margin: 0 auto; */
+	padding-right: 20px;
+}
+
+.footer:nth-child(2) {
+	/* border: 1px dotted blue; */
+	/* height: 50%; */
+	/* height: 100px; */
+	padding: 10px 100px 10px 100px;
+}
